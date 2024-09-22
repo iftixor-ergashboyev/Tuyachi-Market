@@ -17,7 +17,7 @@ class _SecondSplashState extends State<SecondSplash>
   late Animation<double> _fadeAnimation;
   late Animation<double> _scaleAnimation;
 
-  String imagePath = "assets/emoji/good_morning.png";
+  String imagePath = "assets/emoji/good_day.png";
   String message = "Hayrli Tong!";
 
   @override
@@ -52,11 +52,11 @@ class _SecondSplashState extends State<SecondSplash>
   void setGreeting() {
     final hour = DateTime.now().hour;
 
-    if (hour >= 6 && hour < 11) {
-      imagePath = "assets/emoji/good_morning.png";
+    if (hour >= 6 && hour < 10) {
+      imagePath = "assets/emoji/morning.png";
       message = "Hayrli Tong!";
-    } else if (hour >= 11 && hour < 18) {
-      imagePath = "assets/emoji/good_afternoon.png";
+    } else if (hour >= 10 && hour < 18) {
+      imagePath = "assets/emoji/good_day.png";
       message = "Hayrli Kun!";
     } else {
       imagePath = "assets/emoji/good_night.png";

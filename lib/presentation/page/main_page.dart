@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:my_shop/presentation/page/ads_page.dart';
+import 'package:my_shop/presentation/page/category_page.dart';
 import 'package:my_shop/presentation/page/order_page.dart';
 
 import 'home_page.dart';
@@ -17,6 +18,7 @@ class _MainPageState extends State<MainPage> {
 
   final List<Widget> _pages = [
     const HomePage(),
+    const CategoryPage(),
     const OrderPage(),
     const AdsPage(),
   ];
@@ -41,6 +43,10 @@ class _MainPageState extends State<MainPage> {
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
             label: 'Uy',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.category_rounded),
+            label: 'Kategoriya',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.shopping_basket),
