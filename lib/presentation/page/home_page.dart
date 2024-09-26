@@ -27,6 +27,7 @@ class _HomePageState extends State<HomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
+            Gap(24),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -68,9 +69,79 @@ class _HomePageState extends State<HomePage> {
                 );
               }).toList(),
             ),
+            Gap(20),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                InkWell(
+                  onTap: () {},
+                  child: Container(
+                    height: 90,
+                    width: 200,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(12),
+                      color: Colors.black,
+                    ),
+                    child: Stack(
+                      children: [
+                        Positioned.fill(
+                          child: Opacity(
+                            opacity: 0.5,
+                            child: FadeInImage.assetNetwork(
+                              placeholder: 'assets/loading.gif', placeholderFit: BoxFit.cover,
+                              image: "https://content.jdmagicbox.com/comp/def_content/men-readymade-garment-retailers/1-men-readymade-garment-retailers-1-mcwvb.jpg",
+                              height: double.infinity, width: double.infinity, fit: BoxFit.cover,
+                            ),
+                          ),
+                        ),
+                        Center(
+                          child: Text("Erkaklar uchun", style: TextStyle(
+                            fontSize: 18, fontFamily: "MyFont", fontWeight: FontWeight.bold, color: CupertinoColors.white
+                          )),
+                        )
+                      ],
+                    ),
+                  ),
+                ),
+                SizedBox(width: 10),
+                InkWell(
+                  onTap: () {},
+                  child: Container(
+                    height: 90,
+                    width: 200,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(12),
+                      color: Colors.black,
+                    ),
+                    child: Stack(
+                      children: [
+                        Positioned.fill(
+                          child: Opacity(
+                            opacity: 0.5,
+                            child: FadeInImage.assetNetwork(
+                              placeholder: 'assets/loading.gif', placeholderFit: BoxFit.cover,
+                              image: "https://media.istockphoto.com/id/1212679579/photo/mother-and-daughter-shopping-together-for-clothes-at-outdoor-street-market.jpg?s=612x612&w=0&k=20&c=km3NFFiAjgwZbsa1I1rJg46jWynFQ44iddEnUp2Qg3w=",
+                              height: double.infinity, width: double.infinity, fit: BoxFit.cover,
+                            ),
+                          ),
+                        ),
+                        Center(
+                          child: Text("Ayollar uchun", style: TextStyle(
+                              fontSize: 18, fontFamily: "MyFont", fontWeight: FontWeight.bold, color: CupertinoColors.white
+                          )),
+                        )
+                      ],
+                    ),
+                  ),
+                ),
+              ],
+            )
           ],
         ),
       ),
     );
   }
 }
+
+
+// https://content.jdmagicbox.com/comp/def_content/men-readymade-garment-retailers/1-men-readymade-garment-retailers-1-mcwvb.jpg"

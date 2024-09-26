@@ -53,7 +53,6 @@ class _MainPageState extends State<MainPage> {
             label: 'Buyurtmalar',
           ),
           BottomNavigationBarItem(
-
             icon: Icon(Icons.ads_click),
             label: 'Reklamalar',
           ),

@@ -14,6 +14,9 @@ class _AdsPageState extends State<AdsPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: CupertinoColors.white,
+      body: Center(
+        child: Image.asset("assets/loading.gif", height: 120, width: 120,),
+      ),
     );
   }
 }
